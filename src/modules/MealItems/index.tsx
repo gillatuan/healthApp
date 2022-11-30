@@ -75,7 +75,7 @@ export const MealItems = () => {
           </Col>
         </Row>
         <div className="button-container">
-          <ButtonStyled label="コラムをもっと見る" />
+          <ButtonStyled children="コラムをもっと見る" />
         </div>
       </Container>
     </div>

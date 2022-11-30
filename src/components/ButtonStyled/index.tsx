@@ -1,15 +1,16 @@
+import { ReactNode } from "react"
 import { Button } from "react-bootstrap"
 
 import "components/ButtonStyled/index.scss"
 
 type TButton = {
   className?: string
-  label: string
+  children: string | ReactNode
   type?: "button" | "submit" | "reset"
   onClick?: () => void
 }
 export const ButtonStyled = (props: TButton) => {
-  const { className, label, type = "button", onClick } = props
+  const { children, className, type = "button", onClick } = props
 
   let clsName = "my-btn"
   if (className) {
@@ -18,7 +19,7 @@ export const ButtonStyled = (props: TButton) => {
 
   return (
     <Button className={clsName} type={type} onClick={onClick}>
-      {label}
+      {children}
     </Button>
   )
 }

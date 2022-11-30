@@ -11,5 +11,25 @@
     flex-direction: revert;
     display: flex;
     margin-left: auto;
+    position: relative;
+
+    .hamburger {
+      background: transparent;
+      border: none;
+      height: 32px;
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 32px;
+    }
   }
+}
+
+.icon-hamburger {
+  background: url(../../../public/icons/icon_menu.png) no-repeat 0 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
 }

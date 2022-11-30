@@ -11,7 +11,9 @@ import { Button } from "@chakra-ui/react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/css"
 
-const StyledAccount = styled.div``
+const StyledAccount = styled.div`
+  margin-right: 22px;
+`
 
 export const Account = () => {
   const { isLoggedIn, loading, setLoading, setIsLoggedIn } =
@@ -36,7 +38,7 @@ export const Account = () => {
             variant="link"
             size="sm"
             className={css`
-              color: white;
+              color: white !important;
               width: 75px !important;
             `}
           >
