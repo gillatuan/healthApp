@@ -1,0 +1,33 @@
+.recommend-element {
+  background-color: #2e2e2e;
+  padding: 24px 0 22px;
+
+  .name {
+    color: #ffcc21;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.11px;
+    padding: 0 8px;
+  }
+  hr {
+    color: #fff;
+    margin: 4px auto 0;
+    opacity: 1;
+    width: 56px;
+  }
+  .sub-name {
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 8px;
+  }
+}

@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+
+  li {
+    color: white;
+    display: flex;
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
+
+    i {
+      left: 0;
+      position: absolute;
+    }
+    .icon-memo {
+      background: url('../../../../public/icons/icon-memo.png') no-repeat 0 0;
+      width: 24px;
+      height: 30px;
+    }
+    .icon-challenge {
+      background: url('../../../../public/icons/icon-challenge.png') no-repeat 0 0;
+      width: 24px;
+      height: 30px;
+    }
+    .icon-info {
+      background: url('../../../../public/icons/icon-info.png') no-repeat 0 0;
+      width: 26px;
+      height: 30px;
+    }
+  }
+}
