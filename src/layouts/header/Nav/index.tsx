@@ -10,7 +10,7 @@ export const Nav = () => (
     </li>
     <li>
       <i className="icon-challenge" />
-      <NavLink to="/profile">チャレンジ</NavLink>
+      <NavLink to="/toppage">チャレンジ</NavLink>
     </li>
     <li>
       <i className="icon-info" />

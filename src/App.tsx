@@ -11,7 +11,7 @@ import PrivateRoute from "components/privateRoute"
 
 import Home from "pages/home"
 import ColumnPage from "pages/ColumnPage"
-import Profile from "pages/profile"
+import TopPage from "pages/TopPage"
 import Login from "pages/login"
 import { Footer } from "layouts/footer"
 
@@ -33,7 +33,7 @@ export default function App() {
           <Switch>
             <Route exact={true} path="/" component={Home} />
             <Route exact={true} path="/column" component={ColumnPage} />
-            <PrivateRoute exact={true} path="/profile" component={Profile} />
+            <PrivateRoute exact={true} path="/toppage" component={TopPage} />
             <Route
               exact={true}
               path="/login"

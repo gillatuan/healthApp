@@ -11,6 +11,10 @@
     i {
       left: 0;
       position: absolute;
+
+      + a {
+        margin-left: 39px;
+      }
     }
     .icon-memo {
       background: url('../../../../public/icons/icon-memo.png') no-repeat 0 0;

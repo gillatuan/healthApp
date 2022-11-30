@@ -13,6 +13,16 @@ import { css } from "@emotion/css"
 
 const StyledAccount = styled.div`
   margin-right: 22px;
+
+  button {
+    background: transparent;
+    color: #fff;
+
+    &:hover {
+      background: transparent;
+      color: #fff;
+    }
+  }
 `
 
 export const Account = () => {

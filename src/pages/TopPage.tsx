@@ -1,11 +1,11 @@
 import * as React from "react";
 import { Heading, Text } from "@chakra-ui/react";
 
-export default function Profile() {
+export default function TopPage() {
   return (
     <>
       <Heading as="h2" size="lg" m={"30px 20px 15px 20px"}>
-        Profile
+      TopPage
       </Heading>
       <Text px={"20px"} pb={"10px"}>
         Currently you are on the <strong>Profile</strong> page,{" "}
