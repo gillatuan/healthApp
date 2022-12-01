@@ -1,0 +1,49 @@
+.date-achievement {
+  position: relative;
+
+  .figure {
+    img {
+      margin-bottom: 0;
+    }
+  }
+  .caption-container {
+    align-items: end;
+    display: flex;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .figure-caption {
+      &.percentage {
+        span {
+          font-size: 25px;
+          line-height: 30px;
+          text-shadow: 0px 0px 6px #fca500;
+        }
+      }
+
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0px 0px 6px #fc7400;
+      }
+
+      + .figure-caption {
+        margin-left: 4px;
+      }
+    }
+  }
+  
+  .charts-container {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

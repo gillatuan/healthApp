@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@brightlayer-ui/colors": "^3.1.1",
+    "@brightlayer-ui/highcharts": "^2.1.0",
     "@chakra-ui/icons": "^2.0.12",
     "@chakra-ui/react": "^2.4.1",
     "@emotion/css": "^11.10.5",
@@ -22,6 +24,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
+    "react-highcharts": "^16.1.0",
     "react-router-dom": "^5.3.3",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.3",
@@ -50,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-highcharts": "^16.0.3"
   }
 }
