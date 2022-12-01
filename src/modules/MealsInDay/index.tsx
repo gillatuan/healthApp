@@ -6,8 +6,24 @@ import { ButtonStyled } from "components/ButtonStyled"
 import { FilterMeal } from "./FilterMeal"
 
 import "modules/MealsInDay/index.scss"
+import { useEffect, useState } from "react"
+import { getMealsInDay } from "services/api/Meals"
+import { TMeal } from "services/api/Meals.d"
 
 export const MealsInDay = () => {
+  const [items, setItems] = useState<TMeal[]>([])
+
+  useEffect(() => {
+    const fetchItems = async (): Promise<void> => {
+      const response = await getMealsInDay()
+      if (response.result) {
+        setItems(response.data)
+      }
+    }
+
+    fetchItems()
+  }, [])
+
   return (
     <>
       <Row className="justify-content-md-center">
@@ -16,30 +32,13 @@ export const MealsInDay = () => {
         </Col>
       </Row>
       <Row className="gx-2" style={{ marginTop: 25 }}>
-        <Col xs={3}>
-          <MealItem datetime="2021.05.17 23:25" image="/images/m01.jpg" />
-        </Col>
-        <Col xs={3}>
-          <MealItem datetime="2021.05.17 23:25" image="/images/l03.jpg" />
-        </Col>
-        <Col xs={3}>
-          <MealItem datetime="2021.05.17 23:25" image="/images/d01.jpg" />
-        </Col>
-        <Col xs={3}>
-          <MealItem datetime="2021.05.17 23:25" image="/images/l01.jpg" />
-        </Col>
-        <Col xs={3}>
-          <MealItem datetime="2021.05.17 23:25" image="/images/m01.jpg" />
-        </Col>
-        <Col xs={3}>
-          <MealItem datetime="2021.05.17 23:25" image="/images/l02.jpg" />
-        </Col>
-        <Col xs={3}>
-          <MealItem datetime="2021.05.17 23:25" image="/images/d02.jpg" />
-        </Col>
-        <Col xs={3}>
-          <MealItem datetime="2021.05.17 23:25" image="/images/s01.jpg" />
-        </Col>
+        {items.map((item, k) => {
+          return (
+            <Col xs={3} key={item.slug}>
+              <MealItem datetime={item.datetime} image={`images/${item.image}`} />
+            </Col>
+          )
+        })}
       </Row>
 
       <Row className="gx-2">
