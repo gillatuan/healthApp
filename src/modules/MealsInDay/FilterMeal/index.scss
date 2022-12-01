@@ -1,0 +1,44 @@
+.filter-meal-container {
+  display: flex;
+
+  .meal {
+    height: 134px;
+    position: relative;
+    width: 116px;
+
+    &::before {
+      content: url(../../../../public/icons/filter-meal-icon.png);
+      position: absolute;
+    }
+    &::after {
+      content: url(../../../../public/icons/icon-knife.png);
+      left: 50%;
+      position: absolute;
+      top: 25px;
+      transform: translateX(-50%);
+    }
+    &.snack {
+      &::after {
+        content: url(../../../../public/icons/icon-cup.png);
+      }
+    }
+
+    + .meal {
+      margin-left: 84px;
+    }
+
+    span {
+      bottom: 32px;
+      color: #fff;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      left: 50%;
+      line-height: 24px;
+      position: absolute;
+      text-align: center;
+      transform: translateX(-50%);
+    }
+  }
+}
