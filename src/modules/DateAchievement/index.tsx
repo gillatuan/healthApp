@@ -13,7 +13,7 @@ export const DateAchievement = (props: TDATEACHIVEMENT) => {
   return (
     <div className="date-achievement">
       <Figure>
-        <Figure.Image height="100%" alt="171x180" src={image} />
+        <Figure.Image alt="171x180" src={image} />
         <div className="caption-container">
           <Figure.Caption className="datetime">
             <span>{datetime}</span>

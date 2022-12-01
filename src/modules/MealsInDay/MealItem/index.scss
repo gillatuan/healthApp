@@ -1,0 +1,39 @@
+.meal-element {
+  margin: 9px 0;
+  
+  .figure {
+    position: relative;
+
+    .datetime {
+      background: #ffcc21;
+      bottom: 8px;
+      color: #fff;
+      padding: 2px 8px 1px;
+      position: absolute;
+    }
+  }
+  .info {
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.075px;
+    color: #414141;
+  }
+  .tags {
+    a {
+      font-family: "Hiragino Kaku Gothic Pro";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0.06px;
+      color: #ff963c;
+
+      + a {
+        margin-left: 10px;
+      }
+    }
+  }
+}

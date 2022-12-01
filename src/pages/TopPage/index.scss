@@ -1,7 +1,33 @@
 @import "variables.scss";
 
 .top-page {
-  height: 316px;
+  .achievement-bodygraph {
+    height: 316px;
+    overflow: hidden;
+  }
+  .meals-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+
+    .meal-element {
+      height: 234px;
+      margin: 4px 0;
+      width: 234px;
+
+      .figure {
+        display: flex;
+        height: 100%;
+        position: relative;
+
+        .figure-img {
+          margin-bottom: 0;
+          min-width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 
 .pie-wrapper {
@@ -9,7 +35,7 @@
   float: left;
   margin: 15px;
   position: relative;
-  
+
   &:nth-child(3n + 1) {
     clear: both;
   }

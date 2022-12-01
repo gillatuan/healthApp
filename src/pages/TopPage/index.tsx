@@ -4,11 +4,12 @@ import { BodyGraph } from "modules/BodyGraph"
 import { DateAchievement } from "modules/DateAchievement"
 
 import "pages/TopPage/index.scss"
+import { MealsInDay } from "modules/MealsInDay"
 
 export default function TopPage() {
   return (
-    <Container fluid className="gx-0">
-      <div className="top-page">
+    <div className="top-page">
+      <Container fluid className="gx-0 achievement-bodygraph">
         <Row className="gx-0">
           <Col xs={4}>
             <DateAchievement
@@ -21,7 +22,11 @@ export default function TopPage() {
             <BodyGraph />
           </Col>
         </Row>
+      </Container>
+
+      <div className="meals-block">
+        <MealsInDay />
       </div>
-    </Container>
+    </div>
   )
 }
